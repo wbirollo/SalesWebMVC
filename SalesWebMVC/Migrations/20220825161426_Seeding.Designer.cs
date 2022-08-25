@@ -9,8 +9,8 @@ using SalesWebMVC.Data;
 namespace SalesWebMVC.Migrations
 {
     [DbContext(typeof(SalesWebMVCContext))]
-    [Migration("20220825135509_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20220825161426_Seeding")]
+    partial class Seeding
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,7 +64,7 @@ namespace SalesWebMVC.Migrations
 
                     b.Property<string>("Email");
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Name");
 
                     b.HasKey("Id");
 
