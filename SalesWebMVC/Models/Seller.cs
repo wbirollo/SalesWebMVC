@@ -7,6 +7,7 @@ namespace SalesWebMVC.Models
 {
     public class Seller
     {
+        [Key]
         public int Id { get; set; }
         
         [Required(ErrorMessage ="{0} required")]
